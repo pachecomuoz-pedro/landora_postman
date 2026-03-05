@@ -1,0 +1,1018 @@
+{
+  "info": {
+    "_postman_id": "a947321d-e9c3-4f7f-8f5f-fa64d9e6276a",
+    "name": "Landora API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Propietarios",
+      "item": [
+        {
+          "name": "Registrar Propietario",
+          "id": "7cac62df-664b-4ea8-9d63-200c90fe04d7",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Pedro Pacheco",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "ppacheco2@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991035577",
+                  "type": "text"
+                },
+                {
+                  "key": "fecha_nacimiento",
+                  "value": "1997-03-24",
+                  "type": "text"
+                },
+                {
+                  "key": "pais",
+                  "value": "México",
+                  "type": "text"
+                },
+                {
+                  "key": "estado",
+                  "value": "Zacatecas",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "p12345",
+                  "type": "text"
+                },
+                {
+                  "key": "foto",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/0493.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/propietarios/registrar",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "propietarios",
+                "registrar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar Propietario",
+          "id": "e2f4be00-6d5b-43e6-bcf4-52746694a2e2",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Pedro Pacheco Edit",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "ppacheco@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991035577",
+                  "type": "text"
+                },
+                {
+                  "key": "fecha_nacimiento",
+                  "value": "1997-03-24",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "pais",
+                  "value": "México",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "estado",
+                  "value": "Zacatecas",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "p12345",
+                  "type": "text"
+                },
+                {
+                  "key": "foto",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/0252.png"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/propietarios/editar/13",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "propietarios",
+                "editar",
+                "13"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Propietarios",
+          "id": "d9120455-baa8-4bfe-a002-84630fb8bbbe",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/propietarios/",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "propietarios",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar Propietario",
+          "id": "a38ce0a1-e86a-4ec3-ae54-00e3a901455b",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/propietarios/eliminar/12",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "propietarios",
+                "eliminar",
+                "12"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Propietario",
+          "id": "1f5649c5-f891-4f8b-b4eb-53837d003fcb",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"correo\": \"ppacheco@gmail.com\",\r\n    \"password\": \"p12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/propietarios/login",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "propietarios",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "ba23d75a-73f2-4d65-bd2b-2ba548e372ee"
+    },
+    {
+      "name": "Valuadores",
+      "item": [
+        {
+          "name": "Registrar Valuador",
+          "id": "e9b2e3e7-243d-4f49-b385-9f8d9dc55668",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Fer",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "fer2@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991001951",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "f12345",
+                  "type": "text"
+                },
+                {
+                  "key": "activo",
+                  "value": "1",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/valuadores/registrar",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "valuadores",
+                "registrar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar Valuador",
+          "id": "f4e326c0-ce61-4f68-8ed1-d6bc32ca38b4",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Fer paredes cabrera",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "fer@gmail.com",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991001951",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "f12345",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/valuadores/editar/1",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "valuadores",
+                "editar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Valuadores",
+          "id": "86a24589-1e70-4b7d-bf0d-af173dbe420d",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/valuadores/",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "valuadores",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar Valuadores",
+          "id": "838dcdb8-1211-465e-a5f3-bbb195d4ed64",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/valuadores/eliminar/1",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "valuadores",
+                "eliminar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Valuadores",
+          "id": "781b0bca-b93f-41f7-9f7e-a58ce3009f7c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"correo\": \"fer@gmail.com\",\r\n    \"password\": \"f12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/valuadores/login",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "valuadores",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "f0b3c68e-edf5-44c2-b5cc-707cb326d30f"
+    },
+    {
+      "name": "Administradores",
+      "item": [
+        {
+          "name": "Registrar Administrador",
+          "id": "eb44517b-5e0f-4640-a537-ce7a8ddfafab",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Fer",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "fer@gmail.com",
+                  "type": "text"
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991001951",
+                  "type": "text"
+                },
+                {
+                  "key": "password",
+                  "value": "f12345",
+                  "type": "text"
+                },
+                {
+                  "key": "rol",
+                  "value": "root",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/administradores/registrar",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "administradores",
+                "registrar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar Administrador",
+          "id": "d5671f1e-f5f8-406e-8bf2-22b81e16bd6b",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "nombre_completo",
+                  "value": "Fer paredes cabrera",
+                  "type": "text"
+                },
+                {
+                  "key": "correo",
+                  "value": "fer@gmail.com",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "telefono",
+                  "value": "4991001951",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "password",
+                  "value": "f12345",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/administradores/editar/1",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "administradores",
+                "editar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Administradores",
+          "id": "eb3c0945-62d7-4fbe-b63c-6cd1acfb5bf0",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/administradores/",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "administradores",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar Administradores",
+          "id": "d56a84f5-a11d-4e9b-9d24-1c3b758d1ac1",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/administradores/eliminar/1",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "administradores",
+                "eliminar",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login Administrador",
+          "id": "9f5f26cc-30d7-498f-b488-25be415b51f6",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"correo\": \"fer@gmail.com\",\r\n    \"password\": \"f12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/administradores/login",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "administradores",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "3c8785ef-8014-4ddd-89c8-24e23996748e"
+    },
+    {
+      "name": "Terrenos",
+      "item": [
+        {
+          "name": "Registrar Terreno",
+          "id": "f259abc7-ca40-4037-8850-acb96211dda0",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_propietario",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "nombre_terreno",
+                  "value": "Terreno Demo",
+                  "type": "text"
+                },
+                {
+                  "key": "direccion",
+                  "value": "Emperatriz Carlota 69 Sierra Nevada Zacatecas Mexico",
+                  "type": "text"
+                },
+                {
+                  "key": "poligono_kmz",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "documento_propiedad",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "plano_terreno",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "avaluo_comercial",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "permiso_construccion",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "carta_legal",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "estudio_impacto_ambiental",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "certificado_zonificacion",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "informe_servicios_publicos",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                },
+                {
+                  "key": "area_total",
+                  "value": "200",
+                  "type": "text"
+                },
+                {
+                  "key": "uso_suelo",
+                  "value": "Agrícola",
+                  "description": "Campos que se pueden usar en esta parte son: Residencial, Comercial, Industrial, Agrícola, Recreativo, Conservación y Otro.",
+                  "type": "text"
+                },
+                {
+                  "key": "topografia",
+                  "value": "Ligera pendiente",
+                  "description": "Campos que se pueden usar en esta parte son: Plano, Ligera pendiente, Pendiente moderada, Pendiente pronunciada, Irregular y Montañoso.",
+                  "type": "text"
+                },
+                {
+                  "key": "tipo_propiedad",
+                  "value": "Rural",
+                  "description": "Campos que se pueden usar en esta parte son: Urbano, Rural e Industrial.",
+                  "type": "text"
+                },
+                {
+                  "key": "servicios_disponibles",
+                  "value": "Agua potable,Electricidad",
+                  "description": "Aqui como se pueden seleccionar varias opciones se van a separar por una coma. Campos que se pueden usar en esta parte son: Agua potable, Electricidad, Drenaje y alcantarillado, Alumbrado público, Pavimentación y aceras, Recolección de basura y Accesibilidad y transporte",
+                  "type": "text"
+                },
+                {
+                  "key": "descripcion",
+                  "value": "Terreno agrícola listo para cosechar cualquier tipo de producto ",
+                  "type": "text"
+                },
+                {
+                  "key": "imagen_1",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/terreno 1.jpg"
+                },
+                {
+                  "key": "imagen_2",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/terreno 2.jpg"
+                },
+                {
+                  "key": "imagen_3",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/terreno 3.jpg"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/terrenos/registrar",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "terrenos",
+                "registrar"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Obtener Terrenos",
+          "id": "8af06a7b-b784-4989-b25f-37681f62bc95",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/terrenos",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "terrenos"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Editar Terreno",
+          "id": "a17862a9-b048-4c7c-9ab4-8ee94fde8ceb",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "id_propietario",
+                  "value": "11",
+                  "type": "text"
+                },
+                {
+                  "key": "nombre_terreno",
+                  "value": "Terreno Demo Edit",
+                  "type": "text"
+                },
+                {
+                  "key": "direccion",
+                  "value": "Emperatriz Carlota 69 Sierra Nevada Zacatecas Mexico",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "poligono_kmz",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/FOLIO_32BRC0303260000648573.pdf"
+                },
+                {
+                  "key": "documento_propiedad",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "plano_terreno",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "avaluo_comercial",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "permiso_construccion",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "carta_legal",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "estudio_impacto_ambiental",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "certificado_zonificacion",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "informe_servicios_publicos",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "disabled": true
+                },
+                {
+                  "key": "area_total",
+                  "value": "200",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "uso_suelo",
+                  "value": "Agrícola",
+                  "description": "Campos que se pueden usar en esta parte son: Residencial, Comercial, Industrial, Agrícola, Recreativo, Conservación y Otro.",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "topografia",
+                  "value": "Ligera pendiente",
+                  "description": "Campos que se pueden usar en esta parte son: Plano, Ligera pendiente, Pendiente moderada, Pendiente pronunciada, Irregular y Montañoso.",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "tipo_propiedad",
+                  "value": "Rural",
+                  "description": "Campos que se pueden usar en esta parte son: Urbano, Rural e Industrial.",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "servicios_disponibles",
+                  "value": "Agua potable,Electricidad",
+                  "description": "Aqui como se pueden seleccionar varias opciones se van a separar por una coma. Campos que se pueden usar en esta parte son: Agua potable, Electricidad, Drenaje y alcantarillado, Alumbrado público, Pavimentación y aceras, Recolección de basura y Accesibilidad y transporte",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "descripcion",
+                  "value": "Terreno agrícola listo para cosechar cualquier tipo de producto ",
+                  "type": "text",
+                  "disabled": true
+                },
+                {
+                  "key": "imagen_1",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/0895.png"
+                },
+                {
+                  "key": "imagen_2",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/terreno 2.jpg",
+                  "disabled": true
+                },
+                {
+                  "key": "imagen_3",
+                  "type": "file",
+                  "src": "/C:/Users/pache/Downloads/terreno 3.jpg",
+                  "disabled": true
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{urlLocal}}/api/terrenos/editar/29",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "terrenos",
+                "editar",
+                "29"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Eliminar Terreno",
+          "id": "350fb170-86c9-4ec9-8ff9-c41255d29550",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "x-access-token",
+                "value": "{{x-access-token}}",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{urlLocal}}/api/terrenos/eliminar/29",
+              "host": [
+                "{{urlLocal}}"
+              ],
+              "path": [
+                "api",
+                "terrenos",
+                "eliminar",
+                "29"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "159b57da-29e1-41f6-af84-33b856817053"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ],
+        "id": "1bf80a60-fa49-4893-96cc-0d95a24a2536"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ],
+        "id": "abe5787f-9dda-4210-8855-668605933ac8"
+      }
+    }
+  ],
+  "variable": [
+    {
+      "id": "7e1f1ea3-4d6a-46d7-a6f1-c9ce868838e2",
+      "key": "urlLocal",
+      "value": ""
+    },
+    {
+      "id": "c6f39654-04b6-48b5-aa44-e5d12978fa98",
+      "key": "x-access-token",
+      "value": ""
+    }
+  ]
+}

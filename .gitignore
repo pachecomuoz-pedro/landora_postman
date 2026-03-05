@@ -1,0 +1,7 @@
+# Postman / caches
+.postman/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
