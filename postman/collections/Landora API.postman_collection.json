@@ -55,7 +55,9 @@
                 {
                   "key": "foto",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/0493.png"
+                  "src": [
+                    "perfil_prueba.jpg"
+                  ]
                 }
               ]
             },
@@ -129,7 +131,9 @@
                 {
                   "key": "foto",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/0252.png"
+                  "src": [
+                    "perfil_prueba.jpg"
+                  ]
                 }
               ]
             },
@@ -656,47 +660,65 @@
                 {
                   "key": "poligono_kmz",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "documento_propiedad",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "plano_terreno",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "avaluo_comercial",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "permiso_construccion",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "carta_legal",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "estudio_impacto_ambiental",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "certificado_zonificacion",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "informe_servicios_publicos",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "area_total",
@@ -735,17 +757,23 @@
                 {
                   "key": "imagen_1",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/terreno 1.jpg"
+                  "src": [
+                    "terreno 1.jpg"
+                  ]
                 },
                 {
                   "key": "imagen_2",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/terreno 2.jpg"
+                  "src": [
+                    "terreno 2.jpg"
+                  ]
                 },
                 {
                   "key": "imagen_3",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/terreno 3.jpg"
+                  "src": [
+                    "terreno 3.jpg"
+                  ]
                 }
               ]
             },
@@ -822,54 +850,72 @@
                 {
                   "key": "poligono_kmz",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/FOLIO_32BRC0303260000648573.pdf"
+                  "src": [
+                    "documento de prueba.pdf"
+                  ]
                 },
                 {
                   "key": "documento_propiedad",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "plano_terreno",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "avaluo_comercial",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "permiso_construccion",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "carta_legal",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "estudio_impacto_ambiental",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "certificado_zonificacion",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "informe_servicios_publicos",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/documento de prueba.pdf",
+                  "src": [
+                    "documento de prueba.pdf"
+                  ],
                   "disabled": true
                 },
                 {
@@ -915,18 +961,24 @@
                 {
                   "key": "imagen_1",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/0895.png"
+                  "src": [
+                    "terreno 1.jpg"
+                  ]
                 },
                 {
                   "key": "imagen_2",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/terreno 2.jpg",
+                  "src": [
+                    "terreno 2.jpg"
+                  ],
                   "disabled": true
                 },
                 {
                   "key": "imagen_3",
                   "type": "file",
-                  "src": "/C:/Users/pache/Downloads/terreno 3.jpg",
+                  "src": [
+                    "terreno 3.jpg"
+                  ],
                   "disabled": true
                 }
               ]
@@ -977,40 +1029,14 @@
       "id": "159b57da-29e1-41f6-af84-33b856817053"
     }
   ],
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "type": "text/javascript",
-        "packages": {},
-        "requests": {},
-        "exec": [
-          ""
-        ],
-        "id": "1bf80a60-fa49-4893-96cc-0d95a24a2536"
-      }
-    },
-    {
-      "listen": "test",
-      "script": {
-        "type": "text/javascript",
-        "packages": {},
-        "requests": {},
-        "exec": [
-          ""
-        ],
-        "id": "abe5787f-9dda-4210-8855-668605933ac8"
-      }
-    }
-  ],
   "variable": [
     {
-      "id": "7e1f1ea3-4d6a-46d7-a6f1-c9ce868838e2",
+      "id": "731fa85b-cfc1-48b7-9c38-cdffa49474dc",
       "key": "urlLocal",
       "value": ""
     },
     {
-      "id": "c6f39654-04b6-48b5-aa44-e5d12978fa98",
+      "id": "076c85d2-8d71-41a1-a5bc-4109e9e8643e",
       "key": "x-access-token",
       "value": ""
     }
