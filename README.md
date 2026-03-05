@@ -4,7 +4,7 @@
 Colección de Postman para probar los endpoints de la **Landora API**.
 
 ## Contenido
-- Endpoints de la Landora API
+- Endpoints de Landora API
 - Variables de entorno configuradas
 - Ejemplos de requests y responses
 
@@ -25,5 +25,6 @@ Colección de Postman para probar los endpoints de la **Landora API**.
 ## Estado
 En desarrollo - Actualmente solo contiene endpoints de Landora API
 
-## Autor
-Pedro Pacheco Muñoz
+## Autores
+Pedro Pacheco
+Fernando Paredes
