@@ -1,0 +1,22 @@
+$kind: http-request
+url: "{{urlLocal}}/api/administradores/registrar"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: nombre_completo
+      value: Fer
+    - type: text
+      key: correo
+      value: fer2@gmail.com
+    - type: text
+      key: telefono
+      value: "4991001951"
+    - type: text
+      key: password
+      value: f12345
+    - type: text
+      key: rol
+      value: root
+order: 1000

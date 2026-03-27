@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{urlLocal}}/api/propietarios/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"correo\": \"ppacheco@gmail.com\",\r
+
+    \    \"password\": \"p12345\"\r
+
+    }"
+order: 5000

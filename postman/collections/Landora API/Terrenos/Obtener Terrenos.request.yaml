@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{urlLocal}}/api/terrenos"
+method: GET
+headers:
+  x-access-token: "{{x-access-token}}"
+order: 2000

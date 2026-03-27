@@ -1,0 +1,5 @@
+$kind: collection
+name: Landora API
+variables:
+  urlLocal: ""
+  x-access-token: ""

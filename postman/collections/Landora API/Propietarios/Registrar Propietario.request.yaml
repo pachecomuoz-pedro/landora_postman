@@ -1,0 +1,32 @@
+$kind: http-request
+url: "{{urlLocal}}/api/propietarios/registrar"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: nombre_completo
+      value: Pedro Pacheco
+    - type: text
+      key: correo
+      value: ppacheco7@gmail.com
+    - type: text
+      key: telefono
+      value: "4991035577"
+    - type: text
+      key: fecha_nacimiento
+      value: 1997-03-24
+    - type: text
+      key: pais
+      value: México
+    - type: text
+      key: estado
+      value: Zacatecas
+    - type: text
+      key: password
+      value: p12345
+    - type: file
+      key: foto
+      src:
+        - perfil_prueba.jpg
+order: 1000

@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{urlLocal}}/api/administradores/eliminar/1"
+method: POST
+headers:
+  x-access-token: "{{x-access-token}}"
+order: 4000

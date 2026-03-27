@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{urlLocal}}/api/administradores/editar/1"
+method: POST
+headers:
+  x-access-token: "{{x-access-token}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: nombre_completo
+      value: Fer paredes cabrera
+    - type: text
+      key: correo
+      value: fer@gmail.com
+      disabled: true
+    - type: text
+      key: telefono
+      value: "4991001951"
+      disabled: true
+    - type: text
+      key: password
+      value: f12345
+      disabled: true
+order: 2000

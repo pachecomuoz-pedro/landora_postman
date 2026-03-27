@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{urlLocal}}/api/valuadores/login"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"correo\": \"fer@gmail.com\",\r
+
+    \    \"password\": \"f12345\"\r
+
+    }"
+order: 5000

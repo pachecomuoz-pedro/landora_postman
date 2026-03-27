@@ -1,0 +1,95 @@
+$kind: http-request
+url: "{{urlLocal}}/api/terrenos/registrar"
+method: POST
+headers:
+  x-access-token: "{{x-access-token}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: id_propietario
+      value: "11"
+    - type: text
+      key: nombre_terreno
+      value: Terreno Demo
+    - type: text
+      key: direccion
+      value: Emperatriz Carlota 69 Sierra Nevada Zacatecas Mexico
+    - type: file
+      key: poligono_kmz
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: documento_propiedad
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: plano_terreno
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: avaluo_comercial
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: permiso_construccion
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: carta_legal
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: estudio_impacto_ambiental
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: certificado_zonificacion
+      src:
+        - documento de prueba.pdf
+    - type: file
+      key: informe_servicios_publicos
+      src:
+        - documento de prueba.pdf
+    - type: text
+      key: area_total
+      value: "200"
+    - type: text
+      key: uso_suelo
+      value: Agrícola
+      description: "Campos que se pueden usar en esta parte son: Residencial,
+        Comercial, Industrial, Agrícola, Recreativo, Conservación y Otro."
+    - type: text
+      key: topografia
+      value: Ligera pendiente
+      description: "Campos que se pueden usar en esta parte son: Plano, Ligera
+        pendiente, Pendiente moderada, Pendiente pronunciada, Irregular y
+        Montañoso."
+    - type: text
+      key: tipo_propiedad
+      value: Rural
+      description: "Campos que se pueden usar en esta parte son: Urbano, Rural e
+        Industrial."
+    - type: text
+      key: servicios_disponibles
+      value: Agua potable,Electricidad
+      description: "Aqui como se pueden seleccionar varias opciones se van a separar
+        por una coma. Campos que se pueden usar en esta parte son: Agua potable,
+        Electricidad, Drenaje y alcantarillado, Alumbrado público, Pavimentación
+        y aceras, Recolección de basura y Accesibilidad y transporte"
+    - type: text
+      key: descripcion
+      value: "Terreno agrícola listo para cosechar cualquier tipo de producto "
+    - type: file
+      key: imagen_1
+      src:
+        - terreno 1.jpg
+    - type: file
+      key: imagen_2
+      src:
+        - terreno 2.jpg
+    - type: file
+      key: imagen_3
+      src:
+        - terreno 3.jpg
+order: 1000
