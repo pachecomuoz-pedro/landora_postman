@@ -1,0 +1,46 @@
+$kind: http-request
+name: Registrar Valuación
+url: "{{urlLocal}}/api/solicitudes_valuacion/registrar"
+method: POST
+headers:
+  x-access-token: "{{x-access-token-propietario}}"
+body:
+  type: formdata
+  content:
+    - type: text
+      key: id_terreno
+      value: "7"
+      description: ""
+      disabled: false
+    - type: text
+      key: id_valuador
+      value: "1"
+      description: ""
+      disabled: false
+    - type: text
+      key: status
+      value: COMPLETADO
+      description: ""
+      disabled: false
+    - type: text
+      key: monto_avaluo
+      value: "0"
+      description: ""
+      disabled: false
+    - type: text
+      key: monto_avaluo_ia
+      value: "0"
+      description: ""
+      disabled: false
+    - type: text
+      key: fecha_entrega
+      value: 2026-04-07
+      description: ""
+      disabled: false
+    - type: file
+      key: archivo_valuacion
+      src:
+        - postman-cloud:///1f132371-5b3c-48d0-9798-bda79434a2ae
+      description: ""
+      disabled: false
+order: 1864779286677260

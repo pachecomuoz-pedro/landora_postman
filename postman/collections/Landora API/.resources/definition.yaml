@@ -1,5 +1,6 @@
 $kind: collection
 name: Landora API
 variables:
-  urlLocal: ""
-  x-access-token: ""
+  urlLocal: http://127.0.0.1:8000
+  x-access-token-propietario: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29ycmVvIjoiYWRtaW5AYWRtaW4uY29tIiwicm9sIjoiQURNSU5JU1RSQURPUiJ9.ozhK2Xsg3OdhPXB8T_-Dh-eZ1LCsN70JRPhAvehTME0
+  x-access-token-valuador: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiY29ycmVvIjoianBlcmV6QGdtYWlsLmNvbSIsInJvbCI6IlZBTFVBRE9SIn0.3M0Hu9jDJ8nn_7YWZ72-LWJEwLYOz1TebqeLb6ikTDQ

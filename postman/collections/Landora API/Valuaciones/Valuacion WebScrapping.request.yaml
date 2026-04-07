@@ -1,0 +1,5 @@
+$kind: http-request
+name: Valuacion WebScrapping
+url: https://ukasociados.com.mx/eps/prg_landora/v1/
+method: GET
+order: 1775508937640
