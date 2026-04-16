@@ -1,0 +1,7 @@
+$kind: http-request
+name: Obtener terrenos en valuacion
+url: "{{urlLocal}}/api/terrenos/en-valuaion/1"
+method: GET
+headers:
+  x-access-token: "{{x-access-token-propietario}}"
+order: 3864778918848536

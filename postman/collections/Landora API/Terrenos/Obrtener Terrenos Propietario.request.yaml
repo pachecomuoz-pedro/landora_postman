@@ -1,7 +1,7 @@
 $kind: http-request
 name: Obrtener Terrenos Propietario
-url: "{{urlLocal}}/api/terrenos/propietario/1"
+url: "{{urlServidor}}/api/terrenos/propietario/1"
 method: GET
 headers:
-  x-access-token: "{{x-access-token}}"
+  x-access-token: "{{x-access-token-propietario}}"
 order: 546557885681082
