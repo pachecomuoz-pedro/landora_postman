@@ -1,14 +1,10 @@
 $kind: http-request
 name: Motor de Valuacion
-url: https://ukasociados.com.mx/eps/prg_landora/v1/?id=4ac29edf11f0477d34a3e43f0de1f368ef4db5aa3cdf13e3fd992d8ee928d088&action=opinionval
+url: https://www.landora.mx/api_lve/v1/?id=70937880009a201b14f294e4d57ec85ae7ce1eac0d01191db34b674223c191df&action=opinionval
 method: GET
 queryParams:
-  - key: id
-    value: a77654e38511c4b83b576227a3dbf56698004c5ee567a5491c7a526649d64479
-    $type: ""
-  - key: action
-    value: opinionval
-    $type: ""
+  id: 70937880009a201b14f294e4d57ec85ae7ce1eac0d01191db34b674223c191df
+  action: opinionval
 auth:
   credentials:
     token: EPSLAND001

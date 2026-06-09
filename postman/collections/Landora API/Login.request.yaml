@@ -6,13 +6,9 @@ body:
   type: json
   content: "{\r
 
-    \    // \"correo\": \"ppacheco@gmail.com\",\r
+    \    \"correo\": \"tomas.herrera@topografiarural.com\",\r
 
-    \    // \"password\": \"P123456789\"\r
-
-    \    \"correo\": \"jperez@gmail.com\",\r
-
-    \    \"password\": \"J123456789\"\r
+    \    \"password\": \"P123456789\"\r
 
     }"
 order: 1705424888793525

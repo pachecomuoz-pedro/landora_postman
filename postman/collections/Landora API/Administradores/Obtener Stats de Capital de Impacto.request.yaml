@@ -1,0 +1,5 @@
+$kind: http-request
+name: Obtener Stats de Capital de Impacto
+url: "{{urlLocal}}/api/administradores/stats/capital-impacto/"
+method: GET
+order: 318496814666278

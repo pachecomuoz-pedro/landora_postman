@@ -1,0 +1,5 @@
+$kind: http-request
+name: Obtener los Servicios
+url: "{{urlLocal}}/api/concierge/servicios/"
+method: GET
+order: 1779920655216

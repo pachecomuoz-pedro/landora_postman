@@ -1,0 +1,7 @@
+$kind: http-request
+name: Obtener mi Solicitudes Propietario
+url: "{{urlLocal}}/api/concierge/solicitudes/"
+method: GET
+headers:
+  x-access-token: "{{x-access-token-propietario}}"
+order: 2746729763604752
